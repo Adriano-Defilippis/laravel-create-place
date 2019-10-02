@@ -74,7 +74,11 @@ header{
 
 
   .box-wrapper{
-    width: 85%;
+    width: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
   }
   &::after{
@@ -86,14 +90,11 @@ header{
   .box{
 
     width: calc(100% / 4 - 10px);
-    min-height: 176px;
 
     font-weight: bold;
 
     margin: 10px 10px;
     padding: 10px;
-
-    float: left;
 
     text-align: center;
 

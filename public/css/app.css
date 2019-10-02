@@ -59,7 +59,10 @@ header {
 }
 
 .container .box-wrapper {
-  width: 85%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .container::after {
@@ -70,11 +73,9 @@ header {
 
 .container .box {
   width: calc(100% / 4 - 10px);
-  min-height: 176px;
   font-weight: bold;
   margin: 10px 10px;
   padding: 10px;
-  float: left;
   text-align: center;
   border-radius: 10px;
   color: white;
