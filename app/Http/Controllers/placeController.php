@@ -15,8 +15,9 @@ class placeController extends Controller
     public function index()
     {
         $name_index = 'PLACE';
+        $bg_col = 'orange';
         $places = Place::all();
-        return view('index_place', compact('name_index', 'places'));
+        return view('index_place', compact('name_index', 'places', 'bg_col'));
     }
 
     /**
@@ -45,7 +46,7 @@ class placeController extends Controller
         ]);
         $place = Place::create($validatedData);
 
-        return redirect('place.index');
+        return redirect('/index');
 
     }
 

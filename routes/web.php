@@ -2,5 +2,5 @@
 
 
 
-Route::get('/index', 'placeController@index')->name('place.index');
+Route::get('/index', 'placeController@index');
 Route::post('/', 'placeController@store')->name('place.store');

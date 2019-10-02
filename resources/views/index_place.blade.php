@@ -4,13 +4,15 @@
 
     <aside>
 
-      <div id='add_elem' href="#">
+      <div id='add_elem' class="bg_{{ $bg_col }}">
+
         <p>ADD NEW ENTITY</p>
         <span class="add_btn">+</span>
-      </div>
 
-      <div class="drop-box">
-        @include('elements.form_place')
+        <div class="drop-box">
+          @include('elements.form_place')
+        </div>
+
       </div>
 
     </aside>
@@ -18,7 +20,7 @@
     <div class="box-wrapper">
 
       @foreach ($places as $place)
-        <div class="box">
+        <div class="box bg_{{ $bg_col }}">
           <p>{{ $place-> name }}</p><br>
           <p>{{ $place-> address }}</p><br>
           <p>{{ $place-> city }}</p><br>
