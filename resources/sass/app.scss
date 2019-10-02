@@ -15,7 +15,34 @@ header{
 
 .container{
 
+  display: flex;
   width: 100%;
+
+  aside{
+
+    width: 20%;
+
+    padding: 10px;
+
+    div#add_elem{
+      width: 60%;
+
+      display: flex;
+      justify-content: space-between;;
+
+      font-weight: bold;
+
+      background-color: orange;
+      color: white;
+
+      border-radius: 10px;
+
+      padding: 5px;
+
+      position: relative;
+
+    }
+  }
 
   .drop-box{
 
@@ -24,6 +51,11 @@ header{
 
     form{
       width: 10%;
+      position: absolute;
+
+      button{
+        margin-top: 10px;
+      }
     }
   }
 
@@ -31,9 +63,23 @@ header{
     width: 100px;
   }
 
+
+  .box-wrapper{
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+
   .box{
 
-    width: 150px;
+    width: calc(100% / 4 - 10px);
 
 
     margin: 10px auto;
@@ -45,21 +91,6 @@ header{
     justify-content: center;
     text-align: center;
 
-  }
-
-  .box-wrapper{
-    width: 60%;
-
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  &::after{
-    clear: both;
-    display: table;
-    content: "";
   }
 }
 
@@ -73,6 +104,12 @@ footer{
 
 
 // HELPER class
+.add_btn{
+  cursor: pointer;
+  width: 15%;
+
+  text-align: center;
+}
 .bg_orange{
   background-color: orange;
 }

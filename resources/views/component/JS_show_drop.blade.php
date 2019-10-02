@@ -4,7 +4,7 @@
 
   $(document).ready(function(){
 
-    $(document).on('click', '#add_elem', function(){
+    $(document).on('click', '.add_btn', function(){
 
       $('.drop-box').fadeToggle();
     });
