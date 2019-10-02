@@ -16,7 +16,7 @@
     <body>
 
       <header>
-        <h2> {{ $name_index }} </h2>
+        <h2> {{ $name_index }} LIST </h2>
       </header>
 
       <div class="container">

@@ -14,7 +14,7 @@ class placeController extends Controller
      */
     public function index()
     {
-        $name_index = 'PLACE LIST';
+        $name_index = 'PLACE';
         $places = Place::all();
         return view('index_place', compact('name_index', 'places'));
     }
@@ -37,7 +37,16 @@ class placeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+          "name" => "required",
+          "address" => "required",
+          "city" => "required",
+          "nation" => "required"
+        ]);
+        $place = Place::create($validatedData);
+
+        return redirect('place.index');
+
     }
 
     /**
