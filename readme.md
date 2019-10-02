@@ -1,6 +1,6 @@
 ADD ENTITY ON DATABASE
 _______________________________
-PPROJECT FOLDER: Public
+PROJECT FOLDER: Public
 
 FILE DB : db_place.sql
 
