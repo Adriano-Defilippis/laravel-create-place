@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title> {{ $name_index }} </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <!-- jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Styles -->
         <link rel="stylesheet" href= {{ mix("css/app.css") }}>
     </head>
@@ -19,6 +20,9 @@
       </header>
 
       <div class="container">
+
+
+
         @yield('content')
       </div>
 

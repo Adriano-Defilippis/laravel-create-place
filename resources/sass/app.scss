@@ -17,10 +17,24 @@ header{
 
   width: 100%;
 
+  .drop-box{
+
+    width: 15%;
+    display: none;
+
+    form{
+      width: 10%;
+    }
+  }
+
+  label{
+    width: 100px;
+  }
+
   .box{
 
     width: 150px;
-    
+
 
     margin: 10px auto;
     padding: 20px;
